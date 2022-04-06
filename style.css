@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+.main-container {
+    padding: 20px;
+    background-color: #0D1323;
+    min-height: 100vh;
+}
+.nav-container {
+    background-color: #1D204B;
+    border-radius: 10px;
+}
+.top-container {
+    background-color: #5746EA ;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 20px;
+}
+.img-container {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+h3 {
+    font-weight: 300;
+    color: #B4AAFF;
+    font-size: 14px;
+}
+h1 {
+    font-weight: 300;
+}
+.options-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.time-option-btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #1D204B;
+    color: #7273B2;
+    font-size: 18px;
+    cursor: pointer;
+}
+.time-option-btn:hover {
+    color: white;
+}
+
+/* time containers */
+
+.time-container {
+    margin-top: 20px;
+    border-radius: 12px;
+}
+.info-container {
+    background-color: #1D204B;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.info-container:hover {
+    background-color: #34397B;
+}
+.icon-container {
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.icon {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    height: 60px;
+    max-width: 100%;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ellipsis {
+    border: none;
+    padding: 0;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+}
+p{
+    color: #7273B2;
+    font-size: 14px;
+}
+
+/* card colours */
+
+
+.work-container {
+    background-color: #FF8B64;
+}
+.play-container {
+    background-color: #56C2E6;
+}
+.study-container {
+    background-color: #FF5E7D;
+}
+.exercise-container {
+    background-color: #4BCF83;
+}
+.social-container {
+    background-color: #7235D1;
+}
+.self-care-container {
+    background-color: #F1C75B;
+}
+
+/* desktop size */
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #0D1323;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 20px;
+        min-height: initial;
+        max-width: 1000px;
+    }
+    .nav-container {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        height: 100%;
+    }
+    .top-container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        height: 66%;
+    }
+    .name-container{
+        padding-right: 30px;
+    }
+    .options-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 33%;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .time-container {
+        margin: 0;
+    }
+    .bottom {
+        flex-direction: column;        
+        align-items: flex-start;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .time-option-btn{
+        font-size: 14px;
+    }
+}
